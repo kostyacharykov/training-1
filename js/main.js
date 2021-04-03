@@ -44,39 +44,27 @@ const books = [
   },
 ];
 
-let testString = '';
+function fillBlock(elementsArray, blockSelector) {
+  let stringForHtml = '';
 
-podcasts.forEach(function(item, index) {
-  testString += `<div class="card">
-    <img src='${item.image}' class='cardimage'>
-    <div class='play'>
-        <img src='img/Vector 1.svg' class='playimg'>
-    </div>
-    <div class='song'>
-        <h2 class='titlealbym'>${item.title}</h2>
-        <a href="#" class='author'>${item.author}</a>
-    </div>
-  </div>`;
-});
+  elementsArray.forEach(function(item, index) {
+    stringForHtml += `<div class="card">
+      <img src='${item.image}' class='cardimage'>
+      <div class='play'>
+          <img src='img/Vector 1.svg' class='playimg'>
+      </div>
+      <div class='song'>
+          <h2 class='titlealbym'>${item.title}</h2>
+          <a href="#" class='author'>${item.author}</a>
+      </div>
+    </div>`;
+  });
+  
+  document.querySelector(blockSelector).innerHTML = stringForHtml;
+}
 
-document.querySelector('.cardmargin1').innerHTML = testString;
-
-let testString2 = '';
-
-books.forEach(function(item, index) {
-  testString2 += `<div class="card">
-    <img src='${item.image}' class='cardimage'>
-    <div class='play'>
-        <img src='img/Vector 1.svg' class='playimg'>
-    </div>
-    <div class='song'>
-        <h2 class='titlealbym'>${item.title}</h2>
-        <a href="#" class='author'>${item.author}</a>
-    </div>
-  </div>`;
-});
-
-document.querySelector('.cardmargin2').innerHTML = testString2;
+fillBlock(podcasts, '.cardmargin1');
+fillBlock(books, '.cardmargin2');
 
 const played = [
   {
