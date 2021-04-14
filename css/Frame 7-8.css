@@ -1,0 +1,364 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  margin: 0;
+}
+.leftsidebar {
+  width: 276px;
+  background: #F4F9FF;
+  padding: 45px;
+}
+.player {
+  width: 276px;
+  height: 430px;
+  background: #2D2D2D;
+  border-radius: 15px;
+  display: flex;
+  position: absolute;
+}
+.playercontent {
+  width: 220px;
+  height: 360px;
+  margin: 35px 28px;
+  position: absolute;
+}
+.nowplaying {
+  font-size: 18px;
+  color: white;
+  margin: 0 auto 30px;
+  text-align: center;
+  border: none;
+}
+.bookthumb {
+  width: 218px;
+  height: 130px;
+}
+.bookdesc {
+  margin: 29px auto 25px;
+}
+.nameplay {
+  margin: 0 auto 4px;
+  color: white;
+  text-align: center;
+}
+.authorplay {
+  margin: 4px auto 0;
+  color: white;
+  text-align: center;
+}
+.playinfo {
+  width: 218px;
+  height: 15px;
+  display: flex;
+  box-sizing: border-box;
+}
+.timebegin {
+  color: white;
+  display: inline;
+  margin: auto 0px;
+  text-align: center;
+  line-height: 15px;
+}
+.lineplay {
+  width: auto;
+  height: 15px;
+  margin: auto 15px;
+  display: flex;
+  box-sizing: border-box;
+}
+.before {
+  width: 71px;
+  height: 3px;
+  background: white;
+  z-index: 2;
+  display: inline;
+  margin-top: 6px;
+}
+.ellipse {
+  width: 11px;
+  height: 11px;
+  z-index: 3;
+  display: inline;
+  margin-top: 2px;
+}
+.after {
+  width: 131px;
+  height: 3px;
+  z-index: 1;
+  background: grey;
+  opacity: 0.3;
+  display: inline;
+  margin-top: 6px;
+  margin-left: -82px;
+}
+.timeend {
+  color: white;
+  display: inline;
+  margin: auto 0px;
+  text-align: center;
+  line-height: 15px;
+}
+.control {
+  width: 218px;
+  height: 50px;
+  margin: 18px auto 0px;
+  display: flex;
+  box-sizing: border-box;
+}
+.butrepeat {
+  width: 20px;
+  height: 20px;
+  background: url('../img/Repeat.svg') no-repeat top;
+  margin-right: 22px;
+  margin-left: 0;
+  border: none;
+  display: inline;
+  margin-top: 15px;
+
+}
+.butback {
+  width: 20px;
+  height: 20px;
+  background: url('../img/Back.svg') no-repeat top;
+  margin-right: 22px;
+  margin-left: 0;
+  border: none;
+  display: inline;
+  margin-top: 15px;
+}
+.butpause {
+  width: 50px;
+  height: 50px;
+  background: url('../img/Pause.svg') no-repeat top;
+  margin-right: 22px;
+  margin-left: 0;
+  border: none;
+  display: inline;
+}
+.butnext {
+  width: 20px;
+  height: 20px;
+  background: url('../img/Next.svg') no-repeat top;
+  margin-right: 22px;
+  margin-left: 0;
+  border: none;
+  display: inline;
+  margin-top: 15px;
+}
+.butvolume {
+  width: 20px;
+  height: 20px;
+  background: url('../img/Volume-full.svg') no-repeat top;
+  margin-right: 0;
+  margin-left: 0;
+  border: none;
+  display: inline;
+  margin-top: 15px;
+}
+
+
+.mainright {
+  width: 760px;
+  padding-top: 45px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filetypes {
+  width: 760px;
+  height: 20px;
+  display: flex;
+}
+.afiletypes {
+  margin-right: 22px;
+  text-decoration: none;
+  color: #7C8DB5;
+}
+.cardbody {
+  width: 760px;
+  border: 1px solid #E6EFFB;
+  border-radius: 10px;
+  background: #FFFFFF;
+  margin-top: 30px;
+}
+.head {
+  width: 712px;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 23px;
+  margin-left: 23px;
+}
+.half {
+  height: 24px;
+  display: flex;
+  align-items: center;
+}
+.pic {
+  width: 24px;
+  height: 24px;
+  display: inline;
+}
+.pictext {
+  display: inline;
+  font-size: 18px; 
+  line-height: 24px;
+  margin-left: 8px;
+}
+.see {
+  display: inline;
+  text-decoration: none;
+  color: #7C8DB5;
+  text-align: center;
+  line-height: 24px;
+}
+.cardmargin1, .cardmargin2 {
+  width: 712px;
+  height: 205px;
+  box-sizing: border-box;
+  margin: 22px 23px 26px;
+}
+.card {
+  width: 163px;
+  height: 205px;
+  display: inline-block;
+  box-sizing: border-box;
+  margin-right: 20px;
+  padding: 15px;
+  margin-left: 0;
+  background: #FFFFFF;
+  border: 1px solid #E6EFFB;
+  border-radius: 10px;
+}
+.card:last-child {
+margin-right: 0;
+}
+.cardimage {
+  width: 131px;
+  height: 125px;
+  border: 0;
+}
+.play {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: -58px;
+  margin-left: 76px;
+  z-index: 1;
+}
+.playimg {
+  width: 13px;
+  height: 16px;
+  z-index: 2;
+  margin: 12px 14px;
+}
+.song {
+  width: 129px;
+  height: 41px;
+  margin-top: 9px;
+}
+.titlealbym {
+  font-size: 15px;
+  line-height: 19px;
+  margin-bottom: 0;
+}
+.author {
+  font-size: 12px;
+  line-height: 15px;
+  text-decoration: none;
+  color: #7C8DB5;
+}
+.row {
+  width: 712px;
+  height: 42px;
+  margin: 29px auto;
+  justify-content: space-between;
+  display: flex;
+}
+.halfleft {
+  box-sizing: border-box;
+  display: flex;
+}
+.numberr {
+  width: 16px;
+  height: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+}
+.titlethumb {
+  width: 221px;
+  height: 41px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+.imgthumb {
+  width: 40px;
+  height: 40px;
+}
+.desc {
+  width: auto;
+  margin-left: 15px;
+}
+.titlealbymplayed {
+  width: 170px;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.authorplayed {
+  width: auto;
+  height: 17px;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+  color: #7C8DB5;
+  margin-top: 4px;
+  margin-bottom: 0;
+}
+.halfright {
+  width: 143px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.time {
+  width: 31px;
+  line-height: 17px;
+  font-size: 14px;
+  color: #7C8DB5;
+  margin-top: 13px;
+}
+.icons {
+  width: 95px;
+  height: 40px;
+  box-sizing: border-box;
+  margin-left: 17px;
+  justify-content: space-between;
+  display: flex;
+}
+.play2 {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #e6edfd;
+  border-radius: 10px;
+  z-index: 1;
+}
+.plus {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #e6edfd;
+  border-radius: 10px;
+  z-index: 1;
+}
+.rectangle {
+  width: 15px;
+  height: 15px;
+  z-index: 2;
+  margin: 12px 12px;
+}

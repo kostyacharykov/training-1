@@ -20,83 +20,43 @@
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
-
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class='leftsidebar'>
-      <div class="player">
-        <div class="playercontent">
-          <h3 class="nowplaying">Now Playing</h3>
-          <img src="img/Book Thumb.svg" class="bookthumb">
-          <div class="bookdesc">
-            <h3 class="nameplay">A Promised Land</h3>
-            <h5 class="authorplay">Barak Obama</h5>
-          </div>
-          <div class="playinfo">
-            <div class="timebegin">2:30</div>
-            <div class="lineplay">
-              <div class="before"></div>
-              <img src="img/Ellipse 3.svg" class="ellipse">
-              <div class="after"></div>
-            </div>
-            <div class="timeend">3:45</div>
-          </div>
-          <div class="control">
-            <button id='button' class="butrepeat"></button>
-            <button id='button' class="butback"></button>
-            <button id='button' class="butpause"></button>
-            <button id='button' class="butnext"></button>
-            <button id='button' class="butvolume"></button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class='mainright'>
-      <div class='filetypes'>
-        <a href="#" class='afiletypes'>Books</a>
-        <a href="#" class='afiletypes'>Podcast</a>
-        <a href="#" class='afiletypes'>Live</a>
-        <a href="#" class='afiletypes'>Radio</a>
-      </div>
-      <section class='cardbody'>
-        <div class="head">
-          <div class='half'>
-            <img src="img/Book-open.svg" class='pic'></img>
-            <h1 class="pictext">From The Library</h1>
-          </div>
-          <a href="#" class='see'>See All</a>
-        </div>
-        <div class='cardmargin1'>
-        </div>
-      </section>
-      <section class=cardbody>
-        <div class="head">
-          <div class='half'>
-            <img src="img/Fire.svg" class="pic"></img>
-            <h1 class="pictext">Books That Might Fit To Your Taste</h1>
-          </div>
-          <a href="#" class='see'>See All</a>
-        </div>
-        <div class="cardmargin2">
-        </div>
-      </section>
-      <section class='cardbody'>
-        <div class="head">
-          <div class='half'>
-            <img src="img/Headphones.svg" class='pic'></img>
-            <h1 class="pictext">Recently Played</h1>
-          </div>
-          <a href="#" class='see'>See All</a>
-        </div>
-        <div class='cardmargin3'>
-        </div>
-      </section>
+  <h1 class="header">Список дел Чарукова</h1>
+  <div class="add-field">
+    <input type="text" class="add-field__exercise" placeholder=" Впишите текст задачи...">
+    <button id="button" class="add-field__add">Добавить</button>
   </div>
-  
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <div class="area">
+    <h3 class="area__list">Список задач:</h3>
+    <div class="area__half-area">
+      <!-- <div class="area__element">
+        <input type="checkbox" class="area__element__check">
+        <p class="area__element__text1">Поиграть в комплюхтер</p>
+        <img src="img/trash 1.svg" class="area__element__trash">
+      </div>
+      <div class="area__element">
+        <input type="checkbox" class="area__element__check">
+        <p class="area__element__text2">Пройти секиро</p>
+        <img src="img/trash 1.svg" class="area__element__trash">
+      </div>
+      <div class="area__element">
+        <input type="checkbox" class="area__element__check">
+        <p class="area__element__text3">Pornhub time</p>
+        <img src="img/trash 1.svg" class="area__element__trash">
+      </div>
+      <div class="area__element">
+        <input type="checkbox" class="area__element__check">
+        <p class="area__element__text4">Попить певка</p>
+        <img src="img/trash 1.svg" class="area__element__trash">
+      </div> -->
+    </div>
+  </div>
+
+<script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
