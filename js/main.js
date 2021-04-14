@@ -24,7 +24,7 @@ button1.addEventListener('click', function() {
 
 textadd.addEventListener('keydown', function (params) {
   if (params.key == 'Enter') { 
-    addtask();
+    addtask(rty = 'beforeend');
   };
 });
 
