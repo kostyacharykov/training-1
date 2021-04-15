@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
   /* justify-content: space-between; */
 }
-.add-field__exercise {
+.add-field__exercise, .add-field__month {
   width: 478px;
   height: 50px;
   border-radius: 8px;
