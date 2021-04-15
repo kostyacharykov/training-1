@@ -4,18 +4,24 @@ let area = document.querySelector('.area__half-area');
 
 let addtask = function () {
   // textadd.value = textadd.value;
+  if (textadd.value * 12 < 100000) {
   area.innerHTML = `<div class="area__element">
-   <input type="checkbox" class="area__element__check">
-   <p class="area__element__text1">${textadd.value * 12} рублей</p>
-   <a class='area__element__delete'><img src="img/trash 1.svg" class="area__element__trash"></a>
-   </div>`;
-   if (textadd.value * 12 < 100000) {
-    area.innerHTML = `<div class="area__element">
    <input type="checkbox" class="area__element__check">
    <p class="area__element__text1">СЛИШКОМ МАЛО РУБЛЕЙ БЛЯ, ЛОХ ЕБАНЫЙ</p>
    <a class='area__element__delete'><img src="img/trash 1.svg" class="area__element__trash"></a>
    </div>`;
-   }
+  } else if (textadd.value * 12 > 1000000) {
+    area.innerHTML = `<div class="area__element">
+   <input type="checkbox" class="area__element__check">
+   <p class="area__element__text1">ТЫ ШО ОХУЭЛ БЛЯ РУБЛЕЙ</p>
+   <a class='area__element__delete'><img src="img/trash 1.svg" class="area__element__trash"></a>
+   </div>`;
+  } else (area.innerHTML = `<div class="area__element">
+   <input type="checkbox" class="area__element__check">
+   <p class="area__element__text1">${textadd.value * 12} рублей</p>
+   <a class='area__element__delete'><img src="img/trash 1.svg" class="area__element__trash"></a>
+   </div>`);
+   };
   // if (textadd.value & 1) {
   //   area.innerHTML = (`<div class="area__element">
   //   <input type="checkbox" class="area__element__check">
@@ -31,7 +37,6 @@ let addtask = function () {
   //   </div>`); // Добавляем элемент в конец списка area, 'beforeend' - аргумент, передающий позицию.
   //   textadd.value = ''; 
   // }
-};
 
 textadd.addEventListener('input', function() {
     addtask();
