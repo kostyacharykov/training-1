@@ -5,15 +5,13 @@ let block = document.querySelector('.block');
 button1.disabled = true;
 
 button0.addEventListener('click', function () {
-  if (block.style.display = "block") {
+  block.style.display = "block"
   button0.disabled = true;
   button1.disabled = false;
-  }
 });
 
 button1.addEventListener('click', function () {
-  if (block.style.display = "none") {
+  block.style.display = "none"
   button1.disabled = true;
   button0.disabled = false;
-  }
 });
