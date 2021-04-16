@@ -1,3 +1,6 @@
-.block {
+.hideblock {
   display: none;
+}
+.showblock {
+  display: block;
 }
