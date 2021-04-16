@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+.header {
+  width: 354px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.add-field {
+  width: 484px;
+  height: 124px;
+  /* display: flex; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 26px;
+  box-sizing: border-box;
+  /* justify-content: space-between; */
+}
+.add-field__exercise, .add-field__month {
+  width: 478px;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;  
+  box-shadow: 0px 4px 4px rgba(204, 204, 204, 0.25);
+}
+.add-field__half {
+  width: 484px;
+  height: 50px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.add-field__addend, .add-field__addbegin {
+  width: 200px;
+  height: 50px;
+  background: #62BDFF;
+  border-radius: 8px;
+  font-size: 18px;
+  color: white;
+  border: none;
+}
+.area {
+  width: 484px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 24px;
+  border: 1px solid #CCCCCC;  
+  border-radius: 8px;
+  padding: 12px;
+}
+.area__list {
+width: 177px;
+padding-left: 8px;
+}
+.area__half-area {
+  display: inline-block;
+}
+.area__element {
+  height: 30px;
+  display: flex;
+  padding: 5px 8px;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  box-sizing: border-box;
+}
+.area__element:hover {
+  background: #ECF8FF;
+}
+.area__element:first-child {
+  margin-top: 0;
+}
+.area__element__check {
+  position: relative;
+  top: 50%;
+  margin-top: -7px;
+}
+.area__element__text1 {
+  margin: auto 6px;
+}
+.area__element__trash {
+  width: 13px;
+  height: 13px;
+  position: relative;
+  top: 50%;
+  margin-top: -7px;
+  display: none;
+}
+.area__element:hover .area__element__trash {
+  display:block;
+}
