@@ -20,7 +20,7 @@ let button = document.querySelector('.button');
 let block = document.querySelector('.showblock');
 
 button.addEventListener('click', function () {
-  if (block.classList.value == 'showblock') {
+  if (block.classList == 'showblock') {
     block.classList.remove('showblock');
     block.classList.add('hideblock');
   } else {
@@ -28,4 +28,5 @@ button.addEventListener('click', function () {
     block.classList.add('showblock');
   }
 });
-console.log(block.classList);
+console.log(block.classList.contains('showblock'));
+console.log(block.classList.contains('hideblock'));
