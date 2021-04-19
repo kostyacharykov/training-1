@@ -1,0 +1,15 @@
+.redblock {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+.longblock {
+  background: red;
+  width: 200px;
+  height: 100px;
+}
+.highblock {
+  background: red;
+  width: 100px;
+  height: 200px;
+}
