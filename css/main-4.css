@@ -1,16 +1,16 @@
 .block {
   width: 100px;
   height: 100px;
+}
+.block {
   background: green;
 }
 .redblock {
   background: red;
 }
 .longblock {
-  background: red;
   width: 200px;
 }
 .highblock {
-  background: red;
   height: 200px;
 }
