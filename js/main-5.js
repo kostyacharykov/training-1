@@ -27,6 +27,8 @@ let addtask = function () {
 };
 
 hystmodal__save.addEventListener('click', function () {
+  if (hystmodal__area__input_name.value != '', hystmodal__area__input_post.value != '') {
   hystmodal.style.display = 'none';
   addtask();
+  }
 });
