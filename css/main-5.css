@@ -1,0 +1,97 @@
+.body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+.header {
+  width: 86px; 
+  margin: 16px auto;
+}
+.div {
+  width: 444px;
+  margin: 190px auto;
+}
+.please {
+  margin: 0px auto 24px;
+}
+.open {
+  width: 160px;
+  height: 50px;
+  margin: 0 142px;
+  background: #62BDFF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+.footer {
+  font-family: 'Roboto', sans-serif;
+  width: 98px;
+  margin: 16px auto;
+  font-size: 34px;
+  font-weight: 500;
+}
+.hystmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 1000;
+}
+.hystmodal .hystmodal__window {
+  width: 500px;
+  height: 280px;
+  border-radius: 8px;
+  background-color: #fefefe;
+  margin: 15% auto;
+  z-index: 99999;
+}
+.hystmodal__close {
+  width: 13px;
+  height: 13px;
+  background: url('../img/Close.svg') no-repeat top;
+  margin-top: 10px;
+  margin-left: 477px;
+  border: none;
+}
+.hystmodal__area {
+  width: 284px;
+  height: 60px;
+  display: flex;
+  position: relative;
+  margin-left: 108px;
+  margin-top: 60px;
+}
+.hystmodal__area__name {
+  width: 130px;
+  height: 60px;
+}
+.hystmodal__area__your-name, .hystmodal__area__your-post {
+  display: inline-block;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  text-align: center;
+  line-height: 22px;
+}
+.hystmodal__area__input {
+width: 148px;
+height: 60px;
+}
+.hystmodal__area__input-name, .hystmodal__area__input-post {
+  width: 148px;
+  height: 18px;
+  margin-top: 4px;
+}
+.hystmodal__save {
+    width: 160px;
+    height: 50px;
+    margin-top: 26px;
+    background: #62BDFF;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    margin-left: 170px;
+}
