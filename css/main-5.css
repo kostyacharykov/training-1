@@ -1,22 +1,38 @@
-.body {
+html, body {
+  height: 100%;
+}
+body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
+  height: 100%;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+.content {
+	flex: 1 0 auto;
 }
 .header {
-  width: 86px; 
+  width: 92px; 
   margin: 16px auto;
 }
+.hr, .hr2 {
+  width: 100%;
+}
 .div {
-  width: 444px;
+  width: 468px;
   margin: 190px auto;
 }
 .please {
   margin: 0px auto 24px;
+  display: inline-block;
 }
 .open {
   width: 160px;
   height: 50px;
-  margin: 0 142px;
+  margin: 0 153px;
   background: #62BDFF;
   color: white;
   border: none;
@@ -24,10 +40,11 @@
 }
 .footer {
   font-family: 'Roboto', sans-serif;
-  width: 98px;
+  width: 96px;
   margin: 16px auto;
   font-size: 34px;
-  font-weight: 500;
+  font-weight: 700;
+  flex: 0 0 auto;
 }
 .hystmodal {
   display: none;
