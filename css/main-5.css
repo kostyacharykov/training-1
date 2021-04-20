@@ -23,7 +23,11 @@ body {
 }
 .div {
   width: 468px;
-  margin: 190px auto;
+  left: 50%;
+  margin-left: -234px;
+  top: 50%;
+  margin-top: -55px;
+  position: absolute;
 }
 .please {
   margin: 0px auto 24px;
