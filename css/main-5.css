@@ -75,7 +75,7 @@ body {
   border: none;
 }
 .hystmodal__area {
-  width: 284px;
+  width: 288px;
   height: 60px;
   display: flex;
   position: relative;
@@ -83,22 +83,24 @@ body {
   margin-top: 60px;
 }
 .hystmodal__area__name {
-  width: 130px;
+  width: 140px;
   height: 60px;
+  text-align: right;
+  padding: 4px;
 }
 .hystmodal__area__your-name, .hystmodal__area__your-post {
   display: inline-block;
   margin-top: 4px;
   margin-bottom: 4px;
+  line-height: 18px;
   text-align: center;
-  line-height: 22px;
 }
 .hystmodal__area__input {
 width: 148px;
 height: 60px;
 }
 .hystmodal__area__input-name, .hystmodal__area__input-post {
-  width: 148px;
+  width: 140px;
   height: 18px;
   margin-top: 4px;
 }
