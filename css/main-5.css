@@ -11,22 +11,24 @@ body {
 	flex-direction: column;
 	min-height: 100%;
 }
-.content {
-	flex-grow: 1;
-  border-bottom: 1px solid grey;
-  border-top: 1px solid grey;
-}
 .header {
   width: 92px; 
   margin: 16px auto;
 }
+.content {
+	flex-grow: 1;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
 .div {
   width: 468px;
-  left: 50%;
+  /* left: 50%;
   margin-left: -234px;
   top: 50%;
-  margin-top: -55px;
-  position: absolute;
+  margin-top: -55px; */
 }
 .please {
   margin: 0px auto 24px;
