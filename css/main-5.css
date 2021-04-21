@@ -12,14 +12,13 @@ body {
 	min-height: 100%;
 }
 .content {
-	flex: 1 0 auto;
+	flex-grow: 1;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
 }
 .header {
   width: 92px; 
   margin: 16px auto;
-}
-.hr, .hr2 {
-  width: 100%;
 }
 .div {
   width: 468px;
@@ -48,7 +47,7 @@ body {
   margin: 16px auto;
   font-size: 34px;
   font-weight: 700;
-  flex: 0 0 auto;
+  flex-grow: 0;
 }
 .hystmodal {
   display: none;
