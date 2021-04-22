@@ -28,7 +28,7 @@ body {
   border: 1px solid #00A3FF;
   display: flex;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
 .grid__element__number {
   font-size: 20px;
