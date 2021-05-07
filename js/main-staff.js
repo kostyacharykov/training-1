@@ -29,60 +29,41 @@ const staff = [
   },
 ];
 
-const seework = ['Всех', 'Работает', 'В отпуске'];
-let stringname = '';
-let stringname2 = '';
 let worker_parameters = document.querySelector('.worker_parameters');
 let select = document.querySelector('.select');
 let obolochka = document.querySelector('.obolochka');
 
-seework.forEach(function(item, i) {
-  stringname += `<option value="${i}">${item}</option>`;
+// ---------------------------------------------------------------------------------
+let rer = function () {
+let stringname2 = '';
+staff.forEach(function(item) {
+  let filterSelectValue = select.value;
+  if (
+    filterSelectValue == 'vsex' ||
+    (filterSelectValue == 'v_otpuske' && item.onVacation) ||
+    (filterSelectValue == 'rabota' && !item.onVacation)
+    ) {
+      stringname2 += `<div class="worker_parameters ${item.onVacation ? 'worker_parameters__onVacation' : ''}">
+      <div class="worker_parameters__names_position">
+      <h4 class="names">${item.name}</h4>
+      <p class="position">${item.position}</p>
+      </div>
+      ${item.onVacation
+        ? `<div class='onVacation_show'>В отпуске</div>`
+        : ''
+      }
+      <p class="age">Возраст: ${item.age} лет</p>
+      <p class="salary">Зарплата: ${item.salary} /
+      месяц</p>
+      </div>
+      `;
+    }
 });
-
-document.querySelector('.select').innerHTML = stringname;
-
-
-
-document.querySelector('.select').addEventListener('change', function (item) {
-  document.querySelector('.obolochka').innerHTML = stringname2;
-  if (select.value == 0) {
-  staff.forEach(function(item) {
-    stringname2 += `<div class="worker_parameters ${item.onVacation ? 'worker_parameters__onVacation' : ''}">
-    <div class="worker_parameters__names_position">
-    <h4 class="names">${item.name}</h4>
-    <p class="position">${item.position}</p>
-    </div>
-    <div class='onVacation_hide ${item.onVacation ? 'onVacation_show' : ''}'>В отпуске</div>
-    <p class="age">Возраст: ${item.age} лет</p>
-    <p class="salary">Зарплата: ${item.salary} / месяц</p>
-    </div>`;
-  });
-} else if (select.value == 1) {
-  staff.forEach(function(item) {
-    stringname2 += `<div class="worker_parameters ${item.onVacation ? 'worker_parameters__hide' : 'worker_parameters'}">
-    <div class="worker_parameters__names_position">
-    <h4 class="names">${item.name}</h4>
-    <p class="position">${item.position}</p>
-    </div>
-    <div class='onVacation_hide ${item.onVacation ? 'onVacation_hide' : 'onVacation_hide'}'>В отпуске</div>
-    <p class="age">Возраст: ${item.age} лет</p>
-    <p class="salary">Зарплата: ${item.salary} / месяц</p>
-    </div>`;
-  });
-} else {
-  staff.forEach(function(item) {
-    stringname2 += `<div class="worker_parameters ${item.onVacation ? 'worker_parameters' : 'worker_parameters__hide'}">
-    <div class="worker_parameters__names_position">
-    <h4 class="names">${item.name}</h4>
-    <p class="position">${item.position}</p>
-    </div>
-    <div class='onVacation_hide ${item.onVacation ? 'onVacation_show' : 'onVacation_hide'}'>В отпуске</div>
-    <p class="age">Возраст: ${item.age} лет</p>
-    <p class="salary">Зарплата: ${item.salary} / месяц</p>
-    </div>`;
-  });
+document.querySelector('.obolochka').innerHTML = stringname2;
 };
+
+document.querySelector('.select').addEventListener('change', function () {
+  rer();
 });
 
-console.log(worker_parameters.classList);
+rer();

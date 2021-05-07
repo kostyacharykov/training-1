@@ -17,7 +17,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main-staff.css">
+  <link rel="stylesheet" href="css/main-checkbox.css">
 
   <meta name="theme-color" content="#fafafa">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,13 +28,8 @@
   <wrapper class="wrapper">
     <section class="content">
       <div class="all_worker">
-        <h3 class="all_worker__workers">Сотрудники: </h2>
-        <p class="all_worker__see">Показывать </p>
-        <select class="select">
-          <option value="vsex">Vsex</option>
-          <option value="v_otpuske">V otpuske</option>
-          <option value="rabota">Rabotayut</option>
-        </select>
+        <p><input type="checkbox" class="rabota" value="rabota">Работают</p>
+        <p><input type="checkbox" class="otpusk" value="otpusk">В отпуске</p>
       </div>
       <div class="obolochka">
       <div class="worker_parameters">
@@ -46,7 +41,7 @@
 
 <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main-staff.js"></script>
+  <script src="js/main-checkbox.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
