@@ -36,13 +36,12 @@ let obolochka = document.querySelector('.obolochka');
 
 // ---------------------------------------------------------------------------------
 
-let rer = function (input) {
+let rer = function () {
 let stringname2 = '';
 staff.forEach(function(item) {
-  let filterInputValue = input.value
   if (
-    (filterInputValue == 'rabota' && !item.onVacation) || 
-    (filterInputValue == 'otpusk' && item.onVacation)
+    (input1.checked && !item.onVacation) || 
+    (input2.checked && item.onVacation)
     ) {
       stringname2 += `<div class="worker_parameters ${item.onVacation ? 'worker_parameters__onVacation' : ''}">
       <div class="worker_parameters__names_position">
@@ -58,27 +57,17 @@ staff.forEach(function(item) {
       месяц</p>
       </div>
       `;
-    }
+    };
 });
 document.querySelector('.obolochka').innerHTML = stringname2;
 };
 
 document.querySelector('.rabota').addEventListener('change', function () {
-if (input1.checked) {
-  input2.checked = false;
-  rer(input1);
-  obolochka.style.display = 'block';
-  } else {
-    obolochka.style.display = 'none';
-  }
+  rer();
 });
 
 document.querySelector('.otpusk').addEventListener('change', function () {
-if (input2.checked) {
-  input1.checked = false;
-  rer(input2);
-  obolochka.style.display = 'block';
-  } else {
-    obolochka.style.display = 'none';
-  }
+  rer();
 });
+
+rer();
