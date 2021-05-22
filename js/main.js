@@ -28,6 +28,8 @@ textadd.addEventListener('keydown', function (params) {
   };
 });
 
+let num = 5;
+console.log(num);
 // button.addEventListener('click', function() {
 //   if (textadd.value != '') { // Условие, при котором значение текста в поле для добавления должно быть не равно пустоте
 //     area.insertAdjacentHTML('beforeend',`<div class="area__element">

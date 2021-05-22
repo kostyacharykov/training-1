@@ -48,8 +48,8 @@ staff.forEach(function(item) {
       <h4 class="names">${item.name}</h4>
       <p class="position">${item.position}</p>
       </div>
-      ${item.onVacation
-        ? `<div class='onVacation_show'>В отпуске</div>`
+      ${item.onVacation ? 
+        `<div class='onVacation_show'>В отпуске</div>`
         : ''
       }
       <p class="age">Возраст: ${item.age} лет</p>
@@ -57,7 +57,7 @@ staff.forEach(function(item) {
       месяц</p>
       </div>
       `;
-    };
+    }
 });
 document.querySelector('.obolochka').innerHTML = stringname2;
 };
