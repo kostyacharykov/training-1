@@ -25,6 +25,7 @@
     }],
     "react/jsx-uses-react": 1,
     "react/jsx-uses-vars": "error",
+    "sub": true,
 
     "linebreak-style": [ // Применять согласованный стиль переноса строки
       "error",

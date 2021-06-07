@@ -47,7 +47,7 @@ const books = [
 function fillBlock(elementsArray, blockSelector) {
   let stringForHtml = '';
 
-  elementsArray.forEach(function(item, index) {
+  elementsArray.forEach(function(item) {
     stringForHtml += `<div class="card">
       <img src='${item.image}' class='cardimage'>
       <div class='play'>
@@ -92,7 +92,7 @@ const played = [
 
 let testString3 = '';
 
-played.forEach(function(item, index) {
+played.forEach(function(item) {
   testString3 += `<div class='row'>
   <div class="halfleft">
       <h3 class="numberr">${item.numberr}</h3>
