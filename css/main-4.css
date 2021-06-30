@@ -1,0 +1,14 @@
+.block {
+  width: 100px;
+  height: 100px;
+  background: green;
+}
+.block.redblock {
+  background: red;
+}
+.block.longblock {
+  width: 200px;
+}
+.block.highblock {
+  height: 200px;
+}

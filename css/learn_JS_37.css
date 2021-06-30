@@ -1,0 +1,15 @@
+button {
+  width: 150px;
+  height: 50px;
+  background-color: yellow;
+  transition: 0.3s;
+}
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.btn-block {
+  background-color: grey;
+}
